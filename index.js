@@ -1859,3 +1859,5 @@ wjs.prototype.onFrameSetup=function(wjsFunction){vlcs[this.context].events.on('F
 wjs.prototype.onVolume=function(wjsFunction){vlcs[this.context].events.on('VolumeChange',wjsFunction);return this}
 wjs.prototype.onFirstPlay=function(wjsFunction){vlcs[this.context].events.on('FirstPlay',wjsFunction);return this}
 module.exports = wjs;
+// Exporting auto-resize method to have ability to call it if we need recalculate and resize players
+module.exports.autoResize = autoResize;
